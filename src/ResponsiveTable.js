@@ -30,12 +30,12 @@ class ResponsiveTable extends Component {
       rowsPerPage,
       showPagination,
       implementation,
-      ExpansionPanelDetailsProps,
-      ExpansionPanelDetailsTypographyProps,
-      ExpansionPanelMoreIconProps,
-      ExpansionPanelProps,
-      ExpansionPanelSummaryProps,
-      ExpansionPanelSummaryTypographyProps,
+      AccordionDetailsProps,
+      AccordionDetailsTypographyProps,
+      AccordionMoreIconProps,
+      AccordionProps,
+      AccordionSummaryProps,
+      AccordionSummaryTypographyProps,
       TableBodyCellProps,
       TableBodyProps,
       TableBodyRowProps,
@@ -88,15 +88,15 @@ class ResponsiveTable extends Component {
             page={page}
             rowsPerPage={rowsPerPage}
             showPagination={showPagination}
-            ExpansionPanelDetailsProps={ExpansionPanelDetailsProps}
-            ExpansionPanelDetailsTypographyProps={
-              ExpansionPanelDetailsTypographyProps
+            AccordionDetailsProps={AccordionDetailsProps}
+            AccordionDetailsTypographyProps={
+              AccordionDetailsTypographyProps
             }
-            ExpansionPanelMoreIconProps={ExpansionPanelMoreIconProps}
-            ExpansionPanelProps={ExpansionPanelProps}
-            ExpansionPanelSummaryProps={ExpansionPanelSummaryProps}
-            ExpansionPanelSummaryTypographyProps={
-              ExpansionPanelSummaryTypographyProps
+            AccordionMoreIconProps={AccordionMoreIconProps}
+            AccordionProps={AccordionProps}
+            AccordionSummaryProps={AccordionSummaryProps}
+            AccordionSummaryTypographyProps={
+              AccordionSummaryTypographyProps
             }
             TablePaginationProps={TablePaginationProps}
             onChangePage={this.handleChangePage}

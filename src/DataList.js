@@ -66,13 +66,13 @@ export default class DataList extends Component {
       scrollToSelected,
       scrollOptions,
       showPagination,
-      ExpansionPanelDetailsProps,
-      ExpansionPanelDetailsTypographyProps,
-      ExpansionPanelMoreIconProps,
-      ExpansionPanelProps,
-      ExpansionPanelSummaryProps,
-      ExpansionPanelSummaryTypographyProps,
-      SelectedExpansionPanelProps,
+      AccordionDetailsProps,
+      AccordionDetailsTypographyProps,
+      AccordionMoreIconProps,
+      AccordionProps,
+      AccordionSummaryProps,
+      AccordionSummaryTypographyProps,
+      SelectedAccordionProps,
       TablePaginationProps,
     } = this.props
     if (!Array.isArray(data)
@@ -93,17 +93,17 @@ export default class DataList extends Component {
             selected={row.selected}
             scrollToSelected={scrollToSelected}
             scrollOptions={scrollOptions}
-            ExpansionPanelDetailsProps={ExpansionPanelDetailsProps}
-            ExpansionPanelDetailsTypographyProps={
-              ExpansionPanelDetailsTypographyProps
+            AccordionDetailsProps={AccordionDetailsProps}
+            AccordionDetailsTypographyProps={
+              AccordionDetailsTypographyProps
             }
-            ExpansionPanelMoreIconProps={ExpansionPanelMoreIconProps}
-            ExpansionPanelProps={ExpansionPanelProps}
-            ExpansionPanelSummaryProps={ExpansionPanelSummaryProps}
-            ExpansionPanelSummaryTypographyProps={
-              ExpansionPanelSummaryTypographyProps
+            AccordionMoreIconProps={AccordionMoreIconProps}
+            AccordionProps={AccordionProps}
+            AccordionSummaryProps={AccordionSummaryProps}
+            AccordionSummaryTypographyProps={
+              AccordionSummaryTypographyProps
             }
-            SelectedExpansionPanelProps={SelectedExpansionPanelProps}
+            SelectedAccordionProps={SelectedAccordionProps}
           />
         ))}
         {

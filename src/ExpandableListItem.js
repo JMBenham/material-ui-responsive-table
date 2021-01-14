@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -36,24 +36,24 @@ class ExpandableListItem extends Component {
       details,
       selected,
       summary,
-      ExpansionPanelDetailsProps,
-      ExpansionPanelDetailsTypographyProps,
-      ExpansionPanelMoreIconProps,
-      ExpansionPanelProps,
-      ExpansionPanelSummaryProps,
-      ExpansionPanelSummaryTypographyProps,
-      SelectedExpansionPanelProps,
+      AccordionDetailsProps,
+      AccordionDetailsTypographyProps,
+      AccordionMoreIconProps,
+      AccordionProps,
+      AccordionSummaryProps,
+      AccordionSummaryTypographyProps,
+      SelectedAccordionProps,
     } = this.props;
 
     const rootProps = selected
-      ? { ...ExpansionPanelProps, ...SelectedExpansionPanelProps }
-      : ExpansionPanelProps;
+      ? { ...AccordionProps, ...SelectedAccordionProps }
+      : AccordionProps;
 
     return (
-      <ExpansionPanel className={panelClass && panelClass} {...rootProps} >
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon {...ExpansionPanelMoreIconProps} />}
-          {...ExpansionPanelSummaryProps}
+      <Accordion className={panelClass && panelClass} {...rootProps} >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon {...AccordionMoreIconProps} />}
+          {...AccordionSummaryProps}
         >
           <Typography
             classes={{
@@ -61,24 +61,24 @@ class ExpandableListItem extends Component {
             }}
             gutterBottom
             variant="subtitle1"
-            {...ExpansionPanelSummaryTypographyProps}
+            {...AccordionSummaryTypographyProps}
           >
             {summary}
           </Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails {...ExpansionPanelDetailsProps}>
+        </AccordionSummary>
+        <AccordionDetails {...AccordionDetailsProps}>
           <Typography
             classes={{
               root: classes.detailsText,
             }}
             gutterBottom
             component="div"
-            {...ExpansionPanelDetailsTypographyProps}
+            {...AccordionDetailsTypographyProps}
           >
             {details}
           </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
     )
   }
 }
